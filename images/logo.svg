@@ -1,0 +1,24 @@
+<svg width="120" height="46" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="48" width="122" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_45">
+   <g stroke="null" transform="matrix(0.18073488252106304,0,0,0.13351760608053795,-1620.3734468824298,-782.9529472440524) " id="svg_67">
+    <path stroke="null" id="svg_61" fill="#24698E" d="m9142.402519,5926.377831l51.694,-29.845l0,238.76l-51.694,29.845l0,-238.76z"/>
+    <path stroke="null" id="svg_62" fill="#24698E" d="m9245.790519,5986.067831l51.692,-29.845l0,179.07l-51.692,29.845l0,-179.07z"/>
+    <path stroke="null" id="svg_63" fill="#24698E" d="m9090.711519,5956.222831l0,179.07l-51.694,29.845l0,-179.07l51.694,-29.845z"/>
+    <path stroke="null" id="svg_64" fill="#66C4EC" d="m9245.790519,5986.067831l-51.694,-29.845l0,179.07l51.694,29.845l0,-179.07z"/>
+    <path stroke="null" id="svg_65" fill="#66C4EC" d="m9090.711519,5896.532831l0,238.76l51.692,29.845l0,-238.76l-51.692,-29.845z"/>
+    <path stroke="null" id="svg_66" fill="#66C4EC" d="m8987.323519,5956.222831l51.694,29.845l0,179.07l-51.694,-29.845l0,-179.07z"/>
+   </g>
+  </g>
+  <text transform="matrix(1.0445094502829555,0,0,1,-15.963760912456848,0) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="9" id="svg_51" y="24.168794" x="77.26737" stroke-width="0" fill="#33393d">ПЛАСТИКА</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="9" id="svg_52" y="34.951514" x="64.984862" stroke-width="0" fill="#24698E">ОКОН</text>
+  <rect stroke="null" id="svg_60" height="0.065617" width="0" y="57.706717" x="32.088725" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#66C4EC"/>
+ </g>
+</svg>

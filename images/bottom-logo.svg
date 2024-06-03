@@ -1,0 +1,33 @@
+<svg width="150" height="70" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="152" height="72" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+  <rect fill="#111516" stroke-width="1.5" stroke-opacity="null" x="-30.276121" y="-96.722622" width="173.251631" height="80.779245" id="svg_33" stroke="#000"/>
+  <rect fill="#111516" stroke="#000" stroke-width="1.5" stroke-opacity="null" x="263.978484" y="120.64511" width="0" height="0.645161" id="svg_34"/>
+  <g stroke="null" id="svg_30">
+   <g stroke="null" id="svg_29" transform="matrix(1.5360348772138737,0,0,1.519406963065305,-9.575826094814893,-6.731320868828801) ">
+    <title stroke="null" transform="translate(-4.239236831665039,-3.0611636638641357) translate(-1.3745604753494263,-0.6953227519989014) translate(-3.694138765335083,-2.989893674850464) translate(5.910621643066406,4.484840393066406) ">Layer 1</title>
+    <g stroke="null" id="svg_18">
+     <g stroke="null" transform="matrix(0.18073488252106304,0,0,0.13351760608053795,-1620.3734468824298,-782.9529472440524) " id="svg_19">
+      <path stroke="null" id="svg_25" fill="#24698E" d="m9269.905144,5949.735041l51.694,-29.845l0,238.76l-51.694,29.845l0,-238.76z"/>
+      <path stroke="null" id="svg_24" fill="#24698E" d="m9373.293144,6009.425041l51.692,-29.845l0,179.07l-51.692,29.845l0,-179.07z"/>
+      <path stroke="null" id="svg_23" fill="#24698E" d="m9218.214144,5979.580041l0,179.07l-51.694,29.845l0,-179.07l51.694,-29.845z"/>
+      <path stroke="null" id="svg_22" fill="#66C4EC" d="m9373.293144,6009.425041l-51.694,-29.845l0,179.07l51.694,29.845l0,-179.07z"/>
+      <path stroke="null" id="svg_21" fill="#66C4EC" d="m9218.214144,5919.890041l0,238.76l51.692,29.845l0,-238.76l-51.692,-29.845z"/>
+      <path stroke="null" id="svg_20" fill="#66C4EC" d="m9114.826144,5979.580041l51.694,29.845l0,179.07l-51.694,-29.845l0,-179.07z"/>
+     </g>
+    </g>
+    <rect stroke="null" id="svg_15" height="0.065617" width="0" y="-41.110114" x="-17.770313" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#66C4EC"/>
+   </g>
+  </g>
+ </g>
+</svg>

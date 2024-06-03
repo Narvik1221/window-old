@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "serve": "parcel ./pages/index.html -p 1111 --open",
+    "build": "parcel build ./pages/index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
