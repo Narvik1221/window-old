@@ -57,11 +57,12 @@
             </div>
 
             <div class="header__right">
-              <button id="openTelegram" class="header__works-btn mb20">Наши работы</button>
               <div class="header__works">
-                <div class="header__phone">8 962 284 22 22</div>
-                <button id="openTelegram" class="header__works-btn">Заказать звонок</button>
+                <a href="#widget" class="header__works-btn">Заказать звонок</a>
                 <a href="./calc.html" class="header__works-btn">Калькулятор</a>
+                <button id="open-works" class="header__works-btn mb20">
+                  Наши работы
+                </button>
               </div>
             </div>
             <button class="header__button"></button>
@@ -69,6 +70,45 @@
         </div>
       </header>
       <main class="main"></main>
+      <div id="myModal2" class="modal">
+        <div class="modal-content big-modal">
+          <span class="close2">&times;</span>
+          <div class="calc-title c">Наши работы</div>
+          <div class="w__list">
+
+      
+            <div class="w">
+              <img src="../images/w1.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w2.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w3.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w4.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w5.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w6.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w7.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w8.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w9.png" alt="">
+            </div>
+            <div class="w">
+              <img src="../images/w10.png" alt="">
+            </div>    </div>
+        </div>
+    </div>
       <section class="top">
         <div class="container-my">
           <div class="top__inner">
@@ -80,12 +120,12 @@
               <h1 class="top__inner-2">БАЛКОНЫ И ЛОДЖИИ</h1>
               <div class="top__inner-3">(систем PROVEDAL, ALT-100)</div>
               <div class="top__inner-1 left">
-                - отделка фасадов и кровельные работы
+                - Отделка балкона всевозможными фасадами
               </div>
-              <div class="top__inner-1 left">
-                - металлопластиковые окна и двери
-              </div>
-              <h1 class="top__inner-1 left m-bottom">- ремонт помещений</h1>
+              <div class="top__inner-1 left">- Металлопластиковые окна</div>
+              <h1 class="top__inner-1 left m-bottom">
+                - Работаем со всеми видами нестандартных окон
+              </h1>
 
               <div class="top__inner-1 address">
                 г. Благовещенск, улица Тенистая, 127 <br />
@@ -96,18 +136,13 @@
             <div class="top__right">
               <div class="top__right-inner">
                 <div class="top__right-item">
-                  <img src="../images/window.svg" class="top__right-img" />
-                  <div class="top__right-text">
-                    ОКНО <br />
-                    <span>(1260x1370)</span>
-                  </div>
-                  <div class="top__right-price">13000 руб.</div>
+                  <img src="../images/rul.svg" class="top__right-img" />
+                  <div class="top__right-text">Бесплатные замеры <br /></div>
                 </div>
                 <div class="top__right-item">
-                  <img src="../images/key.svg" class="top__right-img" />
+                  <img src="../images/gar.svg" class="top__right-img" />
                   <div class="top__right-text">
-                    ПОД КЛЮЧ <br />
-                    <div class="top__right-price">20000 руб.</div>
+                    Гарантия 5 лет на стеклопакет и монтаж <br />
                   </div>
                 </div>
                 <div class="top__right-item">
@@ -125,35 +160,38 @@
         </div>
       </section>
 
-      <section class="widget">
+      <section id="widget" class="widget">
         <div class="container-my">
           <div class="widget__inner">
             <div class="widget__title">О нас</div>
             <div class="about">
               <div class="about__inner">
                 <div class="about__left">
-                  <div size="3" class="about__title">Остались вопросы?</div>
-                  <div class="about__text">
-                    Получите бесплатную консультацию
+                  <div size="3" class="about__title">
+                    Заполните, пожалуйста, анкету для получения консультации от
+                    нашего менеджера!
                   </div>
-                  <p size="16" class="about__text">
-                    Позвоните в&nbsp;Контакт-центр или&nbsp;оставьте заявку
-                    на&nbsp;обратный звонок
-                  </p>
-                  <a href="tel:88003022005" class="about__phone"
-                    ><span size="3">+7 962 284 22 22</span></a
-                  >
-
                 </div>
                 <div class="about__right">
-                  <div class="about__form">
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="calc-title">Наш специалист скоро свяжется с Вами</h2>
+                        <p class="calc-subtitle">Cпасибо за ожидание!</p>
+                    </div>
+                </div>
+                  <form id="my-form" class="about__form">
                     <input
-                    placeholder="Ваш город"
-                    type="text"
-                    name="about__form-input"
-                    class="about__form-input"
-                  />
+                    id="city"
+                      required
+                      placeholder="Ваш город"
+                      type="text"
+                      name="about__form-input"
+                      class="about__form-input"
+                    />
                     <input
+                    id="name"
+                      required
                       placeholder="Ваше имя"
                       type="text"
                       name="about__form-input"
@@ -161,16 +199,22 @@
                     />
 
                     <input
+                    id="phone"
+                      required
                       placeholder="Телефон"
                       type="tel"
                       class="about__form-input"
                       value=""
                     />
 
-                    <button id="openTelegram" class="header__works-btn about-btn">
+                    <button
+                      type="submit"
+                      id="send"
+                      class="header__works-btn about-btn"
+                    >
                       Получить консультацию
                     </button>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

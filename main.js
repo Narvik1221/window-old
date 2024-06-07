@@ -108,17 +108,74 @@ document.getElementById("openWhatsApp").addEventListener("click", function () {
   }, timeout);
 });
 
-// document.getElementById('openWhatsApp').addEventListener('click', function() {
-//   // Телефонный номер или текст для открытия в WhatsApp
-//   const phoneNumber = '+79622842222';  // Замените на необходимый номер
-//   const appLink = `whatsapp://send?phone=${phoneNumber}`;
+document.addEventListener("DOMContentLoaded", () => {
+  var modal = document.getElementById("myModal");
+  var modal2 = document.getElementById("myModal2");
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
 
-//   // Создаем невидимый iframe для попытки открыть приложение
-//   const iframe = document.createElement('iframe');
-//   iframe.style.display = 'none';
-//   iframe.src = appLink;
-//   document.body.appendChild(iframe);
 
-//   // Устанавливаем таймаут для проверки, открылось ли приложение
 
-// });
+  let openWorks=document.getElementById('open-works')
+  openWorks.addEventListener('click',(event)=>{
+    modal2.style.display = "block";
+  })
+  var span2 = document.getElementsByClassName("close2")[0];
+  span2.onclick = function () {
+    modal2.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+  window.onclick = function (event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  };
+
+  document
+    .getElementById("my-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      modal.style.display = "block";
+
+      const botToken = '7454845896:AAH7DGjZOslTXY-2nycbSVstzW72alLk9vk'; // Замените на ваш токен
+      const chatId = '-4265072874'; // Замените на ID вашего чата или пользователя
+
+
+      let city = event.target.querySelector("#city").value;
+      let name = event.target.querySelector("#name").value;
+      let phone = event.target.querySelector("#phone").value;
+      message="Город: "+city+"\nИмя: "+name+"\nТелефон: "+phone
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+  
+      fetch(url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+              chat_id: chatId,
+              text: message
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.ok) {
+              alert('Message sent successfully!');
+          } else {
+              alert('Failed to send message: ' + data.description);
+          }
+      })
+      .catch(error => {
+          alert('Error: ' + error.message);
+      });
+ 
+  
+    });
+});

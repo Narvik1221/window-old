@@ -159,7 +159,7 @@ html {
 }
 .header__right {
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: end;
   display: flex;
   gap: 40px;
   align-items: end;
@@ -462,18 +462,22 @@ html {
   gap: 30px;
 }
 .widget__item {
+
   background-color: white;
   width: 360px;
-  height: 312px;
+  height: 274px;
   border-radius: 5px;
 }
 .widget__item.whatsapp {
+
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: end;
 }
 .widget__item.whatsapp > * {
+
+  scale: 0.9;
   border: none !important;
   box-shadow: none !important;
 }
@@ -750,7 +754,7 @@ html {
   background-color: #40b3e0;
   border: 1px solid #40b3e0;
   display: flex;
-  padding: 20px;
+  padding: 18px;
   border-radius: 5px;
   gap: 8px;
   height: 32px;
@@ -1122,4 +1126,79 @@ html {
   flex-direction: column;
   gap: 20px;
   min-height: 90vh;
+}
+.dg__social-widget__popup__phone{
+ display: none !important;
+}
+
+
+.modal {
+  display: none; /* Скрыть по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 90; /* Слой поверх всего */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Включить прокрутку, если нужно */
+  background-color: rgb(0, 0, 0); /* Цвет фона */
+  background-color: rgba(0, 0, 0, 0.4); /* С прозрачностью */
+}
+
+/* Стили для модального контента */
+.modal-content {
+  border-radius: 5px;
+  background-color: #fefefe;
+  margin: 15% auto; /* Центрирование модального окна */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  height: 250px;
+  width: 100%; /* Ширина окна */
+}
+
+/* Стили для кнопки закрытия */
+.close,.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.big-modal{
+
+  overflow-y: auto;
+  max-width: 90vw;
+  height: 90vh;
+  margin: 5vh auto;
+}
+.w > *{
+  aspect-ratio: 1.5;
+    width: 40vw;
+    /* height: 400px; */
+}
+
+@media (max-width: 768px) {
+  .w > *{
+    aspect-ratio: 1.5;
+      width: 80vw;
+      /* height: 400px; */
+  }
+}
+.c{
+  text-align: center;
+}
+.w__list{
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
 }
