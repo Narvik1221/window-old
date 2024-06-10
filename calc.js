@@ -15,7 +15,7 @@ const orders = [
 let countWindow = 1;
 let doc = document.querySelector(".calc__inner");
 let order = orders[+doc.id.substring(1) - 1];
-let closeSection
+let closeSection;
 const newWindow = () => {
   countWindow = countWindow + 1;
   let windows = document.querySelector(".windows");
@@ -34,13 +34,12 @@ const newWindow = () => {
   });
   start();
 };
-let newWindowEl=document.querySelector('.new-window')
-newWindowEl.addEventListener('click',newWindow)
+let newWindowEl = document.querySelector(".new-window");
+newWindowEl.addEventListener("click", newWindow);
 const start = () => {
   order = orders[+doc.id.substring(1) - 1];
   let start = doc.querySelector(".start-btn");
   console.log(start);
-
 
   let Allinner = document.querySelectorAll(".calc__inner");
   console.log(Allinner.length);
@@ -103,22 +102,21 @@ const start = () => {
       order[s.lastElementChild.id] = s.lastElementChild.value;
     });
     console.log(calcImg);
-    Array.from( calcImg.children).forEach(i=>{
-      if(event.target.id==i.id){
-        i.classList.add('active')
-      }else{
-        i.classList.remove('active')
+    Array.from(calcImg.children).forEach((i) => {
+      if (event.target.id == i.id) {
+        i.classList.add("active");
+      } else {
+        i.classList.remove("active");
       }
-
-    })
+    });
     calcImg.src = `/calc_imgages/${event.target.id}.png`;
   };
-  let changeWindowEl=doc.querySelectorAll('.calc__item')
-  changeWindowEl.forEach(i=>{
-    i.addEventListener('click',changeWindow)
-  })
+  let changeWindowEl = doc.querySelectorAll(".calc__item");
+  changeWindowEl.forEach((i) => {
+    i.addEventListener("click", changeWindow);
+  });
   try {
-    console.log(start)
+    console.log(start);
     start.click();
   } catch (e) {
     console.log(e);
@@ -192,8 +190,8 @@ const start = () => {
     });
     calcBottom.classList.toggle("ac");
   };
-  let closeSectionEl=doc.querySelector('#closeSection');
-  closeSectionEl.addEventListener('click',closeSection)
+  let closeSectionEl = doc.querySelector("#closeSection");
+  closeSectionEl.addEventListener("click", closeSection);
   const form = doc.querySelector("#myForm");
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -233,8 +231,20 @@ const start = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-
   start();
-
+  var modal2 = document.getElementById("myModal2");
+  let openWorks = document.getElementById("open-works");
+  openWorks.addEventListener("click", (event) => {
+    console.log(window.location.href);
+    modal2.style.display = "block";
+  });
+  var span2 = document.getElementsByClassName("close2")[0];
+  span2.onclick = function () {
+    modal2.style.display = "none";
+  };
+  window.onclick = function (event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  };
 });
-

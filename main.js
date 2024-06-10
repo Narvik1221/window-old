@@ -1,19 +1,3 @@
-let whatsapp;
-let whatsappContainer = document.querySelector(".whatsapp");
-let doc = document.querySelector(".map-widget-content-view__frame");
-getW = () => {
-  whatsapp = document.querySelector(".dg__social-widget");
-  if (whatsapp == null) {
-    setTimeout(getW, 10);
-  } else {
-    whatsapp.style.display = "none";
-    let popupWhatsapp = whatsapp.querySelector(".dg__social-widget__popup");
-    whatsappContainer.appendChild(popupWhatsapp);
-    popupWhatsapp.style.display = "block";
-  }
-};
-
-getW();
 
 let headerLeft = document.querySelector(".header__left");
 let headerRight = document.querySelector(".header__right");
@@ -66,47 +50,7 @@ document.querySelectorAll("#openTelegram").forEach((i) =>
   })
 );
 
-// document.getElementById('openTelegram').addEventListener('click', function() {
-//   // Telegram username or bot
-//   const telegramUsername = '@evrookna_germes_bot';
 
-//   // Try to open in Telegram app
-//   const appLink = `tg://resolve?domain=${telegramUsername}`;
-
-//   // Fallback to open in browser
-//   const webLink = `https://web.telegram.org/a/#7063673396`;
-
-//   // Create an invisible iframe to try opening the app
-//   const iframe = document.createElement('iframe');
-//   iframe.style.display = 'none';
-//   iframe.src = appLink;
-//   document.body.appendChild(iframe);
-
-//   // Set a timeout to check if the app was opened
-//   setTimeout(() => {
-//       // Remove the iframe after timeout
-//       document.body.removeChild(iframe);
-//       // Open in browser if app not opened
-//       window.open(webLink, '_blank');
-//   }, 2500);
-// });
-document.getElementById("openWhatsApp").addEventListener("click", function () {
-  const phoneNumber = "+79622842222"; // Замените на необходимый номер
-  const appLink = `whatsapp://send?phone=${phoneNumber}`;
-  const webLink = `https://web.whatsapp.com/send?phone=${phoneNumber}`;
-  const timeout = 1500;
-  const start = Date.now();
-
-  // Try to open WhatsApp
-  window.location = appLink;
-
-  // If WhatsApp is not opened in the given time, redirect to the web version
-  setTimeout(function () {
-    if (Date.now() - start < timeout + 100) {
-      window.open(webLink, "_blank");
-    }
-  }, timeout);
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   var modal = document.getElementById("myModal");
@@ -120,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let openWorks=document.getElementById('open-works')
   openWorks.addEventListener('click',(event)=>{
+    console.log(window.location.href)
     modal2.style.display = "block";
   })
   var span2 = document.getElementsByClassName("close2")[0];
@@ -153,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let phone ='8'+ event.target.querySelector("#phone").value;
       message="Город: "+city+"\nИмя: "+name+"\nТелефон: "+phone
       const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-  
+      console.log(message)
       fetch(url, {
           method: 'POST',
           headers: {
