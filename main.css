@@ -507,14 +507,10 @@ html {
 .tg__link {
   display: flex;
   justify-content: center;
-  border: 1px solid #40b3e0;
   display: flex;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   gap: 8px;
-  height: 64px;
-  width: 240px;
-
   align-items: center;
 
   font-family: var(--font-family);
@@ -522,11 +518,8 @@ html {
   font-size: 22px;
   line-height: 125%;
   text-align: center;
-  color: #33393d;
 }
-.tg__link:hover {
-  background-color: #40b3e0;
-}
+
 .tg__img {
   width: 50px;
   height: 50px;
@@ -782,7 +775,7 @@ html {
 }
 
 .about__inner {
-  padding: 20px;
+  padding: 24px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
@@ -808,16 +801,34 @@ html {
 }
 .about__form {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-direction: column;
 }
 
+.input_box {
+  position: relative;
+  display: block;
+}
+.input_box .code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 4px;
+  width: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  height: 100%;
+}
 .about__form-input {
   display: flex;
   justify-content: center;
   border: 1px solid #40b3e0;
   display: flex;
-  padding: 20px;
+  padding: 24px;
   border-radius: 5px;
   gap: 8px;
   height: 48px;

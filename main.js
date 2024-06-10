@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let city = event.target.querySelector("#city").value;
       let name = event.target.querySelector("#name").value;
-      let phone = event.target.querySelector("#phone").value;
+      let phone ='8'+ event.target.querySelector("#phone").value;
       message="Город: "+city+"\nИмя: "+name+"\nТелефон: "+phone
       const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
   

@@ -75,40 +75,39 @@
           <span class="close2">&times;</span>
           <div class="calc-title c">Наши работы</div>
           <div class="w__list">
-
-      
             <div class="w">
-              <img src="../images/w1.png" alt="">
+              <img src="../images/w1.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w2.png" alt="">
+              <img src="../images/w2.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w3.png" alt="">
+              <img src="../images/w3.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w4.png" alt="">
+              <img src="../images/w4.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w5.png" alt="">
+              <img src="../images/w5.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w6.png" alt="">
+              <img src="../images/w6.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w7.png" alt="">
+              <img src="../images/w7.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w8.png" alt="">
+              <img src="../images/w8.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w9.png" alt="">
+              <img src="../images/w9.png" alt="" />
             </div>
             <div class="w">
-              <img src="../images/w10.png" alt="">
-            </div>    </div>
+              <img src="../images/w10.png" alt="" />
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
       <section class="top">
         <div class="container-my">
           <div class="top__inner">
@@ -175,14 +174,16 @@
                 <div class="about__right">
                   <div id="myModal" class="modal">
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2 class="calc-title">Наш специалист скоро свяжется с Вами</h2>
-                        <p class="calc-subtitle">Cпасибо за ожидание!</p>
+                      <span class="close">&times;</span>
+                      <h2 class="calc-title">
+                        Наш специалист скоро свяжется с Вами
+                      </h2>
+                      <p class="calc-subtitle">Cпасибо за ожидание!</p>
                     </div>
-                </div>
+                  </div>
                   <form id="my-form" class="about__form">
                     <input
-                    id="city"
+                      id="city"
                       required
                       placeholder="Ваш город"
                       type="text"
@@ -190,22 +191,23 @@
                       class="about__form-input"
                     />
                     <input
-                    id="name"
+                      id="name"
                       required
                       placeholder="Ваше имя"
                       type="text"
                       name="about__form-input"
                       class="about__form-input"
                     />
-
-                    <input
-                    id="phone"
-                      required
-                      placeholder="Телефон"
-                      type="tel"
-                      class="about__form-input"
-                      value=""
-                    />
+                    <span class="input_box">
+                      <span class="code">+7</span>
+                      <input
+                        id="phone"
+                        required
+                        placeholder="Телефон"
+                        type="number"
+                        class="about__form-input"
+                        value=""
+                    /></span>
 
                     <button
                       type="submit"
@@ -218,17 +220,9 @@
                 </div>
               </div>
             </div>
-            <div class="widget__content">
-              <div class="widget__item tg">
-                <div class="tg__title">Мы в Телеграм</div>
-
-                <button id="openTelegram" class="tg__link">
-                  <img src="../images/tg.svg" alt="tg" class="tg__img" />
-                  присоединиться
-                </button>
-              </div>
-              <div id="openWhatsApp" class="widget__item whatsapp"></div>
-            </div>
+            <button id="openTelegram" class="tg__link">
+              <img src="../images/tg.svg" alt="tg" class="tg__img" />
+            </button>
           </div>
         </div>
       </section>
